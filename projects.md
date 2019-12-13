@@ -1,7 +1,7 @@
 ---
-title: /project
+title: /projects
 layout: home
-permalink: /project
+permalink: /projects
 ---
 
 # Lorem ipsum
