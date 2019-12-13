@@ -12,7 +12,7 @@ Some mostly-non-office highlights from my security and tech history:
 
   * 2019 / OSINT, Terraform, LoRa radio, ESP8266
   * 2018 / SciPy, Pandas, a little machine learning
-  * 2017 / Router reverse engineering, 3D printer
+  * 2017 / Router reverse engineering, 3D printing
   * 2016 / HackyEaster CTF winners circle, first DEFCON
   * 2015 / BiBiFi participant, led first pentest 
   * 2014 / Misc. studying, busy non-tech year
