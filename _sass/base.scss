@@ -143,7 +143,7 @@ pre { background-color: var(--background-color);  border: none;  padding: 0;  ma
  * Responsive ASCII SVGs via https://blog.zgp.org/responsive-ascii/
  */
 svg {
-        width: 75%;
+        width: 100%;
         height: 100%;
         overflow: auto;
 }
@@ -153,8 +153,8 @@ svg text {
         line-height: 100%;
         white-space: pre;
         font-family: monospace;
-        font-size: 8px;
-        fill: #666;
+        font-size: 10px;
+        fill: #CCC;
         user-select:none;
         -webkit-user-select:none;
         -khtml-user-select:none;
