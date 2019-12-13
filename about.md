@@ -27,3 +27,7 @@ Because of my long hobbyist history I often find myself running into topics I ha
 * 2004 / Built first computer from scraps, fried a CPU
 * 2003 / Diablo trainers and Flash game hacks
 * Before / Many years of running the dial-up bill past $100/mo and breaking/fixing the family computer
+
+# Contact
+You can reach me on [https://www.twitter.com](Twitter) for quick questions  
+My [https://www.github.com/qrbounty](Github) is pretty sparse right now since I host my own at home
