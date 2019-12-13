@@ -8,7 +8,7 @@ header_pages:
  - tools.md
  - about.md
 
-footer: 'follow me on <a href="https://twitter.com/">twitter</a>'
+footer: 'follow me on <a href="https://twitter.com/qrbounty">twitter</a>'
 
 #style: light # dark (default) or light
 #listen_for_clients_preferred_style: true # true or false (default)
