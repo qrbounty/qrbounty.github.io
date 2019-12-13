@@ -18,12 +18,12 @@ Because of my long hobbyist history I often find myself running into topics I ha
 * 2013 / Python 3, deobfuscating payloads
 * 2012 / Registry editing and GPO
 * 2011 / Lots of PowerShell, CCNA
-* 2010 / WiFi auditing, lateral movement
-* 2009 / Perl, PowerShell, Metasploit
+* 2010 / WiFi auditing, lateral movement, Debian
+* 2009 / Perl, PowerShell, Metasploit, Back|Track
 * 2008 / IT internship, batch files, network scanning
 * 2007 / Portable apps, Challenge sites (HackThisSite, etc.)
 * 2006 / OllyDbg, windows internals hackery
-* 2005 / CheatEngine, Halo 2 hacks + videos
+* 2005 / CheatEngine, Halo 2 hacks + videos, Ubuntu Linux
 * 2004 / Built first computer from scraps, fried a CPU
 * 2003 / Diablo trainers and Flash game hacks
 * Before / Many years of running the dial-up bill past $100/mo and breaking/fixing the family computer
