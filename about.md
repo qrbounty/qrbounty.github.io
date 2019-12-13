@@ -29,5 +29,5 @@ Because of my long hobbyist history I often find myself running into topics I ha
 * Before / Many years of running the dial-up bill past $100/mo and breaking/fixing the family computer
 
 # Contact
-You can reach me on [https://www.twitter.com](Twitter) for quick questions  
-My [https://www.github.com/qrbounty](Github) is pretty sparse right now since I host my own at home
+You can reach me on [Twitter](https://www.twitter.com) for quick questions  
+My [Github](https://www.github.com/qrbounty) is pretty sparse right now since I host my own at home
