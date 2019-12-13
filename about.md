@@ -6,7 +6,7 @@ permalink: /about
 
 # About Me  
 Hey there! I'm a lifelong security ethusiast who generally keeps a low profile. When it comes to tactics I value being a scalpel over being a hammer. I'm also a "sharpen the axe" kind of person so I'm usually in no hurry to drop right into a shell.  
-Because of my long hobbyist history I often find myself running into topics I haven't actively used in years, luckily that same history has given me the super power of being able to pick almost anything security related back up at full speed in a couple of days.
+Because of my long hobbyist history I often find myself running into topics I haven't actively used in years, luckily that same history has given me the super power of being able to pick almost anything back up at full speed after a brief refresher.
 
 # Some mostly-non-office highlights from my security and tech history:  
 * 2019 / OSINT, Terraform, LoRa radio, ESP8266
