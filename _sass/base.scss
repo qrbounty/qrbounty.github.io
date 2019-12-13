@@ -138,3 +138,24 @@ pre { background-color: var(--background-color);  border: none;  padding: 0;  ma
 .highlight .vg { color: var(--code-color-7); } /* Name.Variable.Global */
 .highlight .vi { color: var(--code-color-7); } /* Name.Variable.Instance */
 .highlight .il { color: var(--code-color-14); } /* Literal.Number.Integer.Long */
+
+/**
+ * Responsive ASCII SVGs via https://blog.zgp.org/responsive-ascii/
+ */
+svg {
+        width: 100%;
+        overflow: auto;
+}
+
+svg text {
+        line-height: 100%;
+        white-space: pre;
+        font-family: monospace;
+        font-size: 8px;
+        fill: #666;
+        user-select:none;
+        -webkit-user-select:none;
+        -khtml-user-select:none;
+        -moz-user-select:none;
+        -ms-user-select:none;
+}
