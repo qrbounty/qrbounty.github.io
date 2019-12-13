@@ -4,8 +4,8 @@ layout: page
 permalink: /about
 ---
 
-# About Me. 
- Hey there! I'm a lifelong security ethusiast who keeps a pretty low profile in general. When it comes to tactics I value being a scalpel over being a hammer. I'm also a "sharpen the axe" kind of person so I'm usually in no hurry to drop right into a shell. I just crammed three hardware metaphors into two sentences so I'm going to bail on this now.
+# About Me  
+Hey there! I'm a lifelong security ethusiast who keeps a pretty low profile in general. When it comes to tactics I value being a scalpel over being a hammer. I'm also a "sharpen the axe" kind of person so I'm usually in no hurry to drop right into a shell. I just crammed three hardware metaphors into two sentences so I'm going to bail on this now.
 
 
 ## Some mostly-non-office highlights from my security and tech history:  
