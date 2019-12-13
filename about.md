@@ -4,10 +4,11 @@ layout: page
 permalink: /about
 ---
 
-# About Me
+# About Me. 
+ Hey there! I'm a lifelong security ethusiast who keeps a pretty low profile in general. When it comes to tactics I value being a scalpel over being a hammer. I'm also a "sharpen the axe" kind of person so I'm usually in no hurry to drop right into a shell. I just crammed three hardware metaphors into two sentences so I'm going to bail on this now.
 
-## Some mostly-non-office highlights from my security and tech history:
 
+## Some mostly-non-office highlights from my security and tech history:  
   * 2019 / OSINT, Terraform, LoRa radio, ESP8266
   * 2018 / SciPy, Pandas, a little machine learning
   * 2017 / Router reverse engineering, 3D printing
