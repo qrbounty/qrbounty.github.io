@@ -8,7 +8,8 @@ permalink: /
 
 Sorry, I'm still working on this site. Here's a challenge:
 
-```0c bc 1b 37 b2 23 e0 6a 13 34 fe e5 ae 59 11 06
+{% highlight python %}
+"""0c bc 1b 37 b2 23 e0 6a 13 34 fe e5 ae 59 11 06
 03 33 73 dd 2f f2 43 e6 56 01 e4 c0 13 9e fb 1f
 fb a6 92 8a cf 1e 9d 1a 8a 0a 9d 4c 68 2b 83 65
 57 bf 1d 72 9a d1 78 71 85 71 c5 99 a7 aa 6b 28
@@ -21,4 +22,5 @@ c1 f7 cb 9d 3f ad 0a fb 40 91 ea 56 2b 9d 58 4e
 d0 16 e6 d6 10 79 82 f8 16 76 dd bd 6e 3b 7e 89
 8f 87 04 bb a1 7f 91 6a c7 19 24 d1 3c 88 ae 20
 02 26 02 26 02 26 02 26 02 26 02 26 02 26 02 26
-02 e6 6c 40 12 fa 47 b3 b2 37 3b 37 13```
+02 e6 6c 40 12 fa 47 b3 b2 37 3b 37 13"""
+{% endhighlight %}
