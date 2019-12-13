@@ -1,6 +1,6 @@
 ---
 title: /project
-layout: page
+layout: home
 permalink: /project
 ---
 
