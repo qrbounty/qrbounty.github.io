@@ -145,7 +145,7 @@ pre { background-color: var(--background-color);  border: none;  padding: 0;  ma
 svg {
         width: 100%;
         height: 100%;
-        overflow: auto;
+        overflow: visible;
 }
 
 svg text {
