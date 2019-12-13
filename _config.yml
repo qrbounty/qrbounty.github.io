@@ -1,7 +1,7 @@
 # Example Site settings
 
 #google_analytics: UA-NNNNNNNN-N
-
+title: .:: QR ::.
 header_pages:
  - index.md
  - projects.md
