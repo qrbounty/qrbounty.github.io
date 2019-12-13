@@ -6,9 +6,9 @@ permalink: /
 
 # Welcome!
 
-I'm still working on this. Here's a little challenge to play with:
+Sorry, I'm still working on this site. Here's a challenge:
 
-{% highlight c#  %}
+{% highlight %}
 0c bc 1b 37 b2 23 e0 6a 13 34 fe e5 ae 59 11 06
 03 33 73 dd 2f f2 43 e6 56 01 e4 c0 13 9e fb 1f
 fb a6 92 8a cf 1e 9d 1a 8a 0a 9d 4c 68 2b 83 65
