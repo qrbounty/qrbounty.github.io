@@ -8,7 +8,7 @@ permalink: /about
 Hey there! I'm a lifelong security ethusiast who generally keeps a low profile. When it comes to tactics I value being a scalpel over being a hammer. I'm also a "sharpen the axe" kind of person so I'm usually in no hurry to drop right into a shell.  
 Because of my long hobbyist history I often find myself running into topics I haven't actively used in years, luckily that same history has given me the super power of being able to pick almost anything security related back up at full speed in a couple of days.
 
-## Some mostly-non-office highlights from my security and tech history:  
+# Some mostly-non-office highlights from my security and tech history:  
 >  * 2019 / OSINT, Terraform, LoRa radio, ESP8266
 >  * 2018 / SciPy, Pandas, a little machine learning
 >  * 2017 / Router reverse engineering, 3D printing
