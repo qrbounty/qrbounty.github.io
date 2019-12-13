@@ -1,5 +1,13 @@
 {%- assign page_paths = site.header_pages | default: default_paths -%}
 <header>
+  <div class="ascii">
+    <p><svg viewBox="0 0 170 24" xmlns="http://www.w3.org/2000/svg">
+    <text x="0" y="0">
+        /
+    O===[============================&gt;
+        \
+    </text></svg></p>
+  </div>
   <div class="menu">
     <ul>
       {%- for path in page_paths -%}
