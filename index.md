@@ -1,5 +1,5 @@
 ---
-title: ~/
+title: .:: QR ::. ~/
 layout: home
 permalink: /
 ---
