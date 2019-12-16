@@ -19,7 +19,7 @@ Because of my long hobbyist history I often find myself running into topics I ha
 * 2012 / Registry editing and GPO
 * 2011 / Lots of PowerShell, CCNA
 * 2010 / WiFi auditing, lateral movement, Debian
-* 2009 / Perl, PowerShell, Metasploit, BackTrack 5
+* 2009 / Perl, PowerShell, Metasploit, BackTrack
 * 2008 / IT internship, batch files, network scanning
 * 2007 / Portable apps, Challenge sites (HackThisSite, etc.)
 * 2006 / OllyDbg, windows internals hackery
