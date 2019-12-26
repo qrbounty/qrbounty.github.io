@@ -6,8 +6,8 @@
   {%- if site.listen_for_clients_preferred_style -%}
     <link rel="stylesheet" type="text/css" href="{{ "/assets/main.css" | relative_url }}">
   {%- else -%}
-    {%- if site.style == 'light' -%}
-     <link rel="stylesheet" type="text/css" href="{{ "/assets/main-light.css" | relative_url }}">
+    {%- if site.style == 'custom' -%}
+     <link rel="stylesheet" type="text/css" href="{{ "/assets/main-custom.css" | relative_url }}">
    {%- else -%}
       <link rel="stylesheet" type="text/css" href="{{ "/assets/main-dark.css" | relative_url }}">
     {%- endif -%}
