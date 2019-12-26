@@ -8,10 +8,10 @@ categories:
 
 
 ## Contents
-The situation
-Analysis
-Resolution
-Lessons Learned
+1. [The Situation](#the-situation)
+2. [Analyzing The Problem](#analyzing-the-problem)
+3. [Getting Our Hands Dirty](#getting-our-hands-dirty)
+4. [Lessons Learned](#lessons-learned)
 
 
 ## The Situation
