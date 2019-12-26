@@ -4,7 +4,6 @@ title:  "Patching A Minecraft Mod Without Source"
 date:   2019-12-26 01:11:00 +0800
 categories:
 ---
-
 # Patching A Minecraft Mod Without Source
 
 
@@ -18,14 +17,17 @@ Lessons Learned
 ## The Situation
 I play Minecraft with my wife on our own private server running Forge. We're playing the current version (1.15.1) but a lot of mods are currently still on previous versions, namely 1.14. I recently decided to try getting the ["Extra Bows" mod][1] (for 1.14) loaded because I was hoping it was simple enough to be natively compatible. It worked perfectly, except the little part where the entire server and all of the clients get a fatal error when someone actually tries to _fire a bow_. Minor detail, I know.
 
+
 [crash gif?]
+
 
 At this point I figured I'd pull down the source, make some edits, and compile as needed, however the source code was nowhere to be found in the official mod repository. Great.
 
-For some reason I was hellbent on making this mod work, probably because I had a stack of 10 or 15 other mods I wanted that weren't compatible yet.  I don't code in Java much anymore but I've messed with .jar files in the past, mostly just to try to decompile and analyze, not patch. This time around I didn't want to have to try to fully decompile, edit, and recompile since I don't have any Java dev tools installed, and because it sounded like a fun little challenge get things working without the source. 
+
+For some reason I was hellbent on making this mod work, probably because I had a stack of 10 or 15 other mods I wanted that weren't compatible yet. I don't code in Java much anymore but I've messed with .jar files in the past, mostly just to try to decompile and analyze, not patch. This time around I didn't want to have to try to fully decompile, edit, and recompile since I don't have any Java dev tools installed, and because it sounded like a fun little challenge get things working without the source. 
 
 ## Analyzing The Problem
-Let's take a look at the state of things when we try to fire an ~error~, err, arrow.
+Let's take a look at the state of things when we try to fire an ~~error~~ arrow.
 
 
 The Crash:
@@ -52,11 +54,14 @@ java.lang.IllegalAccessError: tried to access field net.minecraft.entity.Entity.
 
 So what can we glean from this?
 
+
 - `me.marnic.extrabows.common.items.BasicBow.func_77615_a` within BasicBow.java caused the error.
 - It was trying to access a field from Vanilla minecraft, `net.minecraft.entity.Entity.field_70165_t` 
 - With a bit of knowledge about .jar files we know the file we need to examine closer should be at `/me/marnic/extrabows/common/items/BasicBow.class` (.java source files get compiled to .class in this case)
-	
+
+
 Okay, looks like we're off to hunt down `func_77615_a` within `BasicBow.class` and fix whatever is causing the issue. To get a better idea of the situation let's check the .jar in one of my go-to quick Java decompilation tools - [JD-GUI][2]. Here's what We get from JD-GUI:
+
 
 ```java
   public void func_77615_a(ItemStack bowStack, World worldIn, LivingEntity entityLiving, int timeLeft) {
@@ -257,8 +262,6 @@ A pretty simple change but super fun to make it without working directly from so
 Overall this was an exciting little fix for a minor Minecraft mod annoyance.
 
 
-## References
-<!--Reference links in article-->
 [1]: https://www.curseforge.com/minecraft/mc-mods/extra-bows/files/2796951
 [2]: https://java-decompiler.github.io/
 [3]: https://gitlab.ultramine.ru/ultramine/um_bukkit/blob/ee0552a5a442dbc73e1ff1a37050113eab63e220/src/main/resources/mappings/v1_7_R1/cb2numpkg.srg?expanded=true&viewer=simple
