@@ -53,11 +53,7 @@ java.lang.IllegalAccessError: tried to access field net.minecraft.entity.Entity.
 	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:638) [?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
 	at java.lang.Thread.run(Unknown Source) [?:1.8.0_221] {}
 ```
- 
- 
 So what can we glean from this?
- 
- 
 - `me.marnic.extrabows.common.items.BasicBow.func_77615_a` within BasicBow.java caused the error.
 - It was trying to access a field from Vanilla minecraft, `net.minecraft.entity.Entity.field_70165_t` 
 - With a bit of knowledge about .jar files we know the file we need to examine closer should be at `/me/marnic/extrabows/common/items/BasicBow.class` (.java source files get compiled to .class in this case)
