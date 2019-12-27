@@ -24,10 +24,12 @@ For some reason I was hellbent on making this mod work, probably because I had a
 Here's what I'll be covering in this post:
 - Accessing the .class files within a .jar and modifying them without recompiling.
 - Viewing decompiled .class files with JD-GUI
+- Identifying the logic at play
 - Editing .class files with DirtyJOE
-- Identifying logic necessary to fix a bug
+- Identifying the work necessary to fix the bug
 - Adding the requisite constants
 - Editing JVM opcodes to reference our new constants
+- Running the newly patched mod!
  
 ## Analyzing The Problem
 Let's take a look at the state of things when we try to fire an ~~error~~ arrow.  
@@ -42,16 +44,7 @@ java.lang.IllegalAccessError: tried to access field net.minecraft.entity.Entity.
 	at net.minecraft.network.play.client.CPlayerDiggingPacket.func_148833_a(SourceFile:40) ~[?:?] {re:classloading}
 	at net.minecraft.network.play.client.CPlayerDiggingPacket.func_148833_a(SourceFile:10) ~[?:?] {re:classloading}
 	at net.minecraft.network.PacketThreadUtil.func_225383_a(SourceFile:21) ~[?:?] {re:classloading}
-	at net.minecraft.util.concurrent.TickDelayedTask.run(SourceFile:18) ~[?:?] {re:classloading}
-	at net.minecraft.util.concurrent.ThreadTaskExecutor.func_213166_h(SourceFile:144) ~[?:?] {re:classloading,pl:accesstransformer:B}
-	at net.minecraft.util.concurrent.RecursiveEventLoop.func_213166_h(SourceFile:23) ~[?:?] {re:classloading}
-	at net.minecraft.util.concurrent.ThreadTaskExecutor.func_213168_p(SourceFile:118) ~[?:?] {re:classloading,pl:accesstransformer:B}
-	at net.minecraft.server.MinecraftServer.func_213205_aW(MinecraftServer.java:711) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
-	at net.minecraft.server.MinecraftServer.func_213168_p(MinecraftServer.java:705) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
-	at net.minecraft.util.concurrent.ThreadTaskExecutor.func_213160_bf(SourceFile:103) ~[?:?] {re:classloading,pl:accesstransformer:B}
-	at net.minecraft.server.MinecraftServer.func_213202_o(MinecraftServer.java:690) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:638) [?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
-	at java.lang.Thread.run(Unknown Source) [?:1.8.0_221] {}
+	...
 ```
 So what can we glean from this?
 - We have a `IllegalAccessError` here, which means the called method is trying to access a private element elsewhere.
