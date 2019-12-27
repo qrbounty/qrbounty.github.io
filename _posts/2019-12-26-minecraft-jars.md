@@ -15,8 +15,8 @@ categories:
 ## The Situation
 I play Minecraft with my wife on our own private server running Forge. We're playing the current version (1.15.1) but a lot of mods are currently still on previous versions, namely 1.14. I recently decided to try getting the ["Extra Bows" mod][1] (for 1.14) loaded because I was hoping it was simple enough to be natively compatible. It worked perfectly, except the little part where the entire server and all of the clients get a fatal error when someone actually tries to _fire a bow_. Minor detail, I know.  
  
-[crash gif?]  
- 
+![The game freezes when firing an arrow](/images/before.gif?raw=true)
+
 At this point I figured I'd pull down the source, make some edits, and compile as needed, however the source code was nowhere to be found in the official mod repository. Great.  
  
 For some reason I was hellbent on making this mod work, probably because I had a stack of 10 or 15 other mods I wanted that weren't compatible yet. I don't code in Java much anymore but I've messed with .jar files in the past, mostly just to try to decompile and analyze, not patch. This time around I didn't want to have to try to fully decompile, edit, and recompile since I don't have any Java dev tools installed, and because it sounded like a fun little challenge get things working without the source.   
