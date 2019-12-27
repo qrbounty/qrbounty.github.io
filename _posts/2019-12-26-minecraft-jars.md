@@ -206,10 +206,10 @@ Here's what we end up with in order to wire up our hotfix:
  
 After we create these constants we need to take note of the pointers for the new items from the constant pool. We'll use these to replace the Java opcodes in the `func_77615_a` method. The original opcodes and those seen in "TorchBowMod" are detailed below.
  
- Opcodes for BasicBow
+*Opcodes for BasicBow:*
 ![Opcodes for BasicBow](/assets/images/2019-12-26/basicbowopcodes.png)
  
-Opcodes for TorchBow
+*Opcodes for TorchBow:*
 ![Opcodes for TorchBow](/assets/images/2019-12-26/torchbowopcode.png)
  
 | BasicBow.class| TorchBow.class |
