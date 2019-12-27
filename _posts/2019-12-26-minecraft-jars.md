@@ -219,8 +219,9 @@ It works!
  
 ![It works!](/assets/images/2019-12-26/after.gif){: .center-image }
  
-Here's what our newly hacked together class file looks like decompiled:
+Here's what our newly hacked together call looks like decompiled:
 ```java
+// Reformatted here for readability.
 worldIn.func_184148_a(
 	(PlayerEntity)null, 
     playerEntity.func_226277_ct_(), 
