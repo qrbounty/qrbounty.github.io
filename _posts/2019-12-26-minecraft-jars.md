@@ -160,7 +160,7 @@ Cutting to the chase here:
  
 If everything worked correctly something like this appears:
  
-![DirtyJOE UI](/assets/images/2019-12-26/DirtyJOE1.png)
+![DirtyJOE UI](/assets/images/2019-12-26/dirtyjoe1.png)
  
 From this screenshot we can surmise we'll be able to access and potentially edit the following with DirtyJOE:
  
@@ -171,7 +171,7 @@ From this screenshot we can surmise we'll be able to access and potentially edit
  
 Perfect! At this point we spend 10 or 15 minutes getting familiar with both DirtyJOE and our .class file. What we need next is to locate our `func_77615_a` function, and then find `playerEntity.field_70165_t` once again. We'll find this under the "Methods" tab.
  
-![Function in DirtyJOE](/assets/images/2019-12-26/DirtyJOE2.png)
+![Function in DirtyJOE](/assets/images/2019-12-26/dirtyjoe2.png)
  
 Here's what we can tell from this new information:
 - We see a checkcast call to make sure there's a PlayerEntity involved, so that hints at this being a player property.
@@ -190,7 +190,7 @@ What if we got an example of a mod designed for 1.15 that *does* work? We just n
 - There are only 10 or so methods so examine each one, looking for the pattern of three fields being accessed.
 - In "func_77615_a" of TorchBow.class (the same name of the broken method in our other mod!) we see a very similar pattern followed by the same sound event of the other mod.
  
-![DirtyJOE Pattern](/assets/images/2019-12-26/DirtyJOE3.png)
+![DirtyJOE Pattern](/assets/images/2019-12-26/dirtyjoe3.png)
  
 Aha! So what's different? Well we're using `invokevirtual` here instead of `getfield`. This means we're calling an instance of a method instead of fetching the field from an object. It seems the original mod was directly accessing the player coordinate variables, and in 1.15 perhaps the preferred way is to call a handler method that returns an equivalent. Okay so we have our original code and some working new code, now how do we port this? We can't just copy and paste source code. We're going to need to bootstrap the broken .class with some constants that will point the code in the right direction.
  
@@ -202,14 +202,14 @@ After some exploring it appears that 10 constants are needed to properly refer t
  
 Here's what we end up with in order to wire up our hotfix: 
  
-[PatchedConstants.png]
+![Patched Constants](/assets/images/2019-12-26/patchedconstants.png)
  
 After we create these constants we need to take note of the pointers for the new items from the constant pool. We'll use these to replace the Java opcodes in the `func_77615_a` method. The original opcodes and those seen in "TorchBowMod" are detailed below.
  
-[BasicBowOpCodes.png]
-[TorchBowOpCode.png]
+![Opcodes for BasicBow](/assets/images/2019-12-26/basicbowopcode.png)
+![Opcodes for TorchBow](/assets/images/2019-12-26/torchbowopcode.png)
  
-| BasicBow| TorchBow |
+| BasicBow.class| TorchBow.class |
 | ------------- |-------------| 
 | `B4 00 FE` | `B6 00 D2` | 
 | `B4 01 01` | `B6 00 D5`      |
@@ -217,9 +217,9 @@ After we create these constants we need to take note of the pointers for the new
  
 Fiddling with the first byte of these opcodes reveals that the type of call can easy be changed. `B4` is `getfield` and `B6` is `invokevirtual`. So we're 1/3rd of the way there. The other bytes are simply the constant pool table `MethodRef` entries we created a minute ago, which will vary a bit. 
  
-[PatchedOpCodes.png]
+![Patched opcodes](/assets/images/2019-12-26/patchedopcodes.png)
  
-| BasicBow| TorchBow | Patched  |
+| BasicBow.class| TorchBow.class | Patched  |
 | ------------- |----------------| --- |
 | `B4 00 FE` | `B6 00 D2` | `B6 01 F4` | 
 | `B4 01 01` | `B6 00 D5`      | `B6 01 F5` | 
@@ -230,7 +230,7 @@ Once the patched code is applied we just save a new copy of the BasicBow.class f
  
 It works! 
  
-[shoot gif?]
+![It works!](/assets/images/2019-12-26/after.gif)
  
 Here's what our newly hacked together class file like decompiled:
  
