@@ -54,6 +54,7 @@ java.lang.IllegalAccessError: tried to access field net.minecraft.entity.Entity.
 	at java.lang.Thread.run(Unknown Source) [?:1.8.0_221] {}
 ```
 So what can we glean from this?
+- We have a `IllegalAccessError` here, which means the called method is trying to access a private element elsewhere.
 - `me.marnic.extrabows.common.items.BasicBow.func_77615_a` within BasicBow.java caused the error.
 - It was trying to access a field from Vanilla minecraft, `net.minecraft.entity.Entity.field_70165_t` 
 - With a bit of knowledge about .jar files we know the file we need to examine closer should be at `/me/marnic/extrabows/common/items/BasicBow.class` (.java source files get compiled to .class in this case)
@@ -180,8 +181,8 @@ Great, this is helpful. So... What now? Let's think about why the newest version
 What if we got an example of a mod designed for 1.15 that *does* work? We just need to find a mod that collects player coordinates properly. Luckily there's a perfect mod out there for us: the alpha version of a 1.15 release of [TorchBowMod][6]. To be fair I checked out probably 5 other mods before encountering TorchBowMod. Either way, let's forge ahead.
  
 - Grab the "TorchBowMod" .jar file
-- Use 7zip to pop open the .jar file and extract `mod\torchbowmod\TorcchBow.class` to a working directory.
-- Load `mod\torchbowmod\TorcchBow.class` in Dirty Joe
+- Use 7zip to pop open the .jar file and extract `mod\torchbowmod\TorchBow.class` to a working directory.
+- Load `mod\torchbowmod\TorchBow.class` in Dirty Joe
 - Look around functionality that looks like coordinate gathering. 
 - There are only 10 or so methods so examine each one, looking for the pattern of three fields being accessed.
 - In "func_77615_a" of TorchBow.class (the same name of the broken method in our other mod!) we see a very similar pattern followed by the same sound event of the other mod.
