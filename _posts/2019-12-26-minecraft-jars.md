@@ -47,10 +47,10 @@ java.lang.IllegalAccessError: tried to access field net.minecraft.entity.Entity.
 	...
 ```
 So what can we glean from this?
-- We have a `IllegalAccessError` here, which means the called method is trying to access a private element elsewhere.
 - `me.marnic.extrabows.common.items.BasicBow.func_77615_a` within BasicBow.java caused the error.
 - It was trying to access a field from Vanilla minecraft, `net.minecraft.entity.Entity.field_70165_t` 
-- With a bit of knowledge about .jar files we know the file we need to examine closer should be at `/me/marnic/extrabows/common/items/BasicBow.class` (.java source files get compiled to .class in this case)
+- We have an `IllegalAccessError` here, which means `net.minecraft.entity.Entity.field_70165_t` is a private element or similar.
+- With a bit of knowledge about .jar files we know the file we need to examine closer should be at `/me/marnic/extrabows/common/items/BasicBow.class` (.java source files get compiled to .class in .jars)
  
  
 Okay, looks like we're off to hunt down `func_77615_a` within `BasicBow.class` and fix whatever is causing the issue. To get a better idea of the situation let's check the .jar in one of my go-to quick Java decompilation tools - [JD-GUI][2]. Here's what We get from JD-GUI:
