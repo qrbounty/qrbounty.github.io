@@ -158,7 +158,7 @@ Cutting to the chase here:
 - Rip out `/me/marnic/extrabows/common/items/BasicBow.class` and put it into a working directory
 - Load `BasicBow.class` into DirtyJOE
  
-If everything worked correctly something like this appears:
+If everything works correctly you'll be presented with something like this:
  
 ![DirtyJOE UI](/assets/images/2019-12-26/dirtyjoe1.png)
  
@@ -232,8 +232,7 @@ It works!
  
 ![It works!](/assets/images/2019-12-26/after.gif){: .center-image }
  
-Here's what our newly hacked together class file like decompiled:
- 
+Here's what our newly hacked together class file looks like decompiled:
 ```java
 worldIn.func_184148_a(
 	(PlayerEntity)null, 
