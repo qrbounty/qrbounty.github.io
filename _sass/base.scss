@@ -177,15 +177,19 @@ svg text {
 
 table{
     border-collapse: collapse;
-    border-spacing: 4px;
-    border:2px solid #dddddd;
-    margin-bottom: 1em;
+    border-spacing: 0;
+    border:2px solid #ffffff;
 }
 
 th{
-    border:2px solid #cccccc;
+    border:2px solid #dddddd;
 }
 
 td{
-    border:1px solid #bbbbbb;
+    border:1px solid #cccccc;
+}
+
+th, td {
+  padding: 1em;
+  text-align: center;
 }
