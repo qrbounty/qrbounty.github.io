@@ -17,7 +17,7 @@ I play Minecraft with my wife on our own private server running Forge. We're pla
  
 ![The game freezes when firing an arrow](/assets/images/2019-12-26/before.gif){: .center-image }
 
-At this point I figured I'd pull down the source, make some edits, and compile as needed, however the source code was nowhere to be found in the official mod repository...  
+At this point I figured I'd pull down the source, make some edits, and compile as needed. However, the source code was nowhere to be found in the official mod repository...  
  
 For some reason I was hellbent on making this mod work, probably because I had a stack of 10 or 15 other mods I wanted that weren't compatible yet. I don't code in Java much anymore but I've messed with .jar files in the past, mostly just in terms of decompilation and analysis. This time around I didn't want to have to fully decompile, edit, and recompile since I don't have any Java dev tools installed, and because it sounded like a fun little challenge to get things working without the source.   
 
