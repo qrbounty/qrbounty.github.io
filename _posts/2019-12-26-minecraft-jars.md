@@ -160,7 +160,7 @@ Cutting to the chase here:
  
 If everything worked correctly something like this appears:
  
-[DirtyJOE1.png]
+![DirtyJOE UI](/assets/images/2019-12-26/DirtyJOE1.png)
  
 From this screenshot we can surmise we'll be able to access and potentially edit the following with DirtyJOE:
  
@@ -171,7 +171,7 @@ From this screenshot we can surmise we'll be able to access and potentially edit
  
 Perfect! At this point we spend 10 or 15 minutes getting familiar with both DirtyJOE and our .class file. What we need next is to locate our `func_77615_a` function, and then find `playerEntity.field_70165_t` once again. We'll find this under the "Methods" tab.
  
-[DirtyJOE2.png]
+![Function in DirtyJOE](/assets/images/2019-12-26/DirtyJOE2.png)
  
 Here's what we can tell from this new information:
 - We see a checkcast call to make sure there's a PlayerEntity involved, so that hints at this being a player property.
@@ -190,7 +190,7 @@ What if we got an example of a mod designed for 1.15 that *does* work? We just n
 - There are only 10 or so methods so examine each one, looking for the pattern of three fields being accessed.
 - In "func_77615_a" of TorchBow.class (the same name of the broken method in our other mod!) we see a very similar pattern followed by the same sound event of the other mod.
  
-[DirstyJOE3.png]
+![DirtyJOE Pattern](/assets/images/2019-12-26/DirtyJOE3.png)
  
 Aha! So what's different? Well we're using `invokevirtual` here instead of `getfield`. This means we're calling an instance of a method instead of fetching the field from an object. It seems the original mod was directly accessing the player coordinate variables, and in 1.15 perhaps the preferred way is to call a handler method that returns an equivalent. Okay so we have our original code and some working new code, now how do we port this? We can't just copy and paste source code. We're going to need to bootstrap the broken .class with some constants that will point the code in the right direction.
  
