@@ -206,11 +206,11 @@ Fiddling with the first byte of these opcodes reveals that the type of call can 
  
 ![Patched opcodes](/assets/images/2019-12-26/patchedopcodes.png)
  
-| BasicBow.class| TorchBow.class | Patched  |
+| BasicBow.class| TorchBow.class | Patched Class |
 | ------------- |----------------| --- |
 | `B4 00 FE` | `B6 00 D2` | `B6 01 F4` | 
 | `B4 01 01` | `B6 00 D5`      | `B6 01 F5` | 
-| `B4 01 04` | `B6 00 D8`      | `B6 00 F6` | 
+| `B4 01 04` | `B6 00 D8`      | `B6 01 F6` | 
  
 ### The Results
 Once the patched code is applied we just save a new copy of the BasicBow.class file, drop it back in the mod's .jar file, and run the game. 
