@@ -20,6 +20,14 @@ I play Minecraft with my wife on our own private server running Forge. We're pla
 At this point I figured I'd pull down the source, make some edits, and compile as needed, however the source code was nowhere to be found in the official mod repository. Great.  
  
 For some reason I was hellbent on making this mod work, probably because I had a stack of 10 or 15 other mods I wanted that weren't compatible yet. I don't code in Java much anymore but I've messed with .jar files in the past, mostly just to try to decompile and analyze, not patch. This time around I didn't want to have to try to fully decompile, edit, and recompile since I don't have any Java dev tools installed, and because it sounded like a fun little challenge get things working without the source.   
+
+Here's what I'll be covering in this post:
+- Accessing the .class files within a .jar and modifying them without recompiling.
+- Viewing decompiled .class files with JD-GUI
+- Editing .class files with DirtyJOE
+- Identifying logic necessary to fix a bug
+- Adding the requisite constants
+- Editing JVM opcodes to reference our new constants
  
 ## Analyzing The Problem
 Let's take a look at the state of things when we try to fire an ~~error~~ arrow.  
