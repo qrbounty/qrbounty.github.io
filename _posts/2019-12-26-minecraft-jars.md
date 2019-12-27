@@ -104,28 +104,23 @@ Okay, looks like we're off to hunt down `func_77615_a` within `BasicBow.class` a
   }
 ```
  
-Okay, well that doesn't help nearly as much as it could. From this we're able to see we're checking that we have some arrows, and there are a few world-centric checks. Let's find that `playerEntity.field_70165_t` bit that caused the crash:
+Okay, well that doesn't help nearly as much as it could. From this we're able to see a check for available arrows and a few world-centric checks. Let's find that `playerEntity.field_70165_t` bit that caused the crash:
  
 ```java
-worldIn.func_184148_a((PlayerEntity)null, playerEntity.field_70165_t, playerEntity.field_70163_u, playerEntity.field_70161_v, SoundEvents.field_187737_v, SoundCategory.PLAYERS, 1.0F, 1.0F / (RandomUtil.RANDOM.nextFloat() * 0.4F + 1.2F) + f * 0.5F);
-```
- 
-And let's break it down a bit:
- 
-```java
+// Reformatted here for readability. 
 worldIn.func_184148_a(
 	(PlayerEntity)null, 
     playerEntity.field_70165_t, // <--- Problem 
     playerEntity.field_70163_u, // Seems closely related
     playerEntity.field_70161_v, // Seems closely related
     SoundEvents.field_187737_v, // Sound 
-    SoundCategory.PLAYERS,		// Sound
+    SoundCategory.PLAYERS,	// Sound
     1.0F, 
     1.0F / (RandomUtil.RANDOM.nextFloat() * 0.4F + 1.2F) + f * 0.5F
 );
 ```
  
-At this point we don't have the hints we need from real source and I don't have any knowledge of native Minecraft playerEntity calls. I also tried searching online for code changes between 1.14 and 1.15, but there were no "Hey developers, `this` property is now `that`" docs available. What about seeing if someone else has been talking about `net.minecraft.entity.entity.field_70165_t`?
+At this point we don't have all the context we need and I don't have any knowledge of native Minecraft playerEntity calls. I also tried searching online for code changes between 1.14 and 1.15, but there were no "Hey developers, `this` property is now `that`" docs available. What about seeing if someone else has been talking about `net.minecraft.entity.entity.field_70165_t`?
  
 Gold! Deep in an old Bukkit repository on [someone's GitLab][3] I found a translation table that cleared things up instantly: 
  
@@ -153,7 +148,6 @@ If everything works correctly you'll be presented with something like this:
 ![DirtyJOE UI](/assets/images/2019-12-26/dirtyjoe1.png)
  
 From this screenshot we can surmise we'll be able to access and potentially edit the following with DirtyJOE:
- 
 - Constants
 - Fields
 - Methods
