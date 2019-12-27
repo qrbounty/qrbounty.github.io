@@ -13,7 +13,7 @@ categories:
 4. [Lessons Learned](#lessons-learned)
  
 ## The Situation
-I play Minecraft with my wife on our own private server running Forge. We're playing the current version (1.15.1) but a lot of mods are  still on the previous version, 1.14. I recently decided to try getting the ["Extra Bows" mod][1] (for 1.14) running because I was hoping it was simple enough to be natively compatible. It worked perfectly, except the little part where the entire server and all of the clients get a fatal error when someone actually tries to _fire a bow_. Minor detail.  
+I play Minecraft with my wife on our own private server running Forge. We're playing the current version (1.15.1) but a lot of mods are still on the previous version, 1.14. I recently decided to try getting the ["Extra Bows" mod][1] (for 1.14) running because I was hoping it was simple enough to be natively compatible. It worked perfectly, except the little part where the entire server and all of the clients get a fatal error when someone actually tries to _fire a bow_. Minor detail.  
  
 ![The game freezes when firing an arrow](/assets/images/2019-12-26/before.gif){: .center-image }
 
