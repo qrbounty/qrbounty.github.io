@@ -83,7 +83,7 @@ textarea { vertical-align: top; }
  */
 .lineno { color: var(--code-color-1); margin-right: 15px; }
 figure.highlight { margin: 5px 0; }
-pre { background-color: var(--background-color); border: 1px;  padding: .5em;  margin: 0;  margin-bottom: 1.5em;  overflow:auto;  font-size: $base-font-size;  color: var(--text-color);  line-height: 1.7 !important;  font-family: $base-font-family !important; }
+pre { background-color: #282a36; border: 1px;  padding: .5em;  margin: 0;  margin-bottom: 1.5em;  overflow:auto;  font-size: $base-font-size;  color: var(--text-color);  line-height: 1.7 !important;  font-family: $base-font-family !important; }
 
 .highlight {
   background-color: #282a36;
