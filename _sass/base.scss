@@ -84,7 +84,7 @@ textarea { vertical-align: top; }
 .lineno { color: var(--code-color-1); margin-right: 15px; }
 figure.highlight { margin: 5px 0; }
 pre { background-color: var(--background-color); border: 1px;  padding: .5em;  margin: 0;  margin-bottom: 1.5em;  overflow:auto;  font-size: $base-font-size;  color: var(--text-color);  line-height: 1.7 !important;  font-family: $base-font-family !important; }
-.highlight pre { background-color: #272822;}.highlight code, .highlight pre {
+.highlight code, .highlight pre {
 color:#fdce93;
 background-color:#3f3f3f;
 }
@@ -138,22 +138,10 @@ color:purple;
 font-weight:700;
 }
 
-.highlight .gt {
-color:#0040D0;
-}
-
-.highlight .kc {
-color:#dca3a3;
-}
-
-.highlight .kd {
-color:#ffff86;
-}
-
-.highlight .kn {
-color:#dfaf8f;
-font-weight:700;
-}
+.highlight .gt {color:#0040D0; }
+.highlight .kc {color:#dca3a3; }
+.highlight .kd {color:#ffff86; }
+.highlight .kn {color:#dfaf8f; font-weight:700; }
 
 .highlight .kp {
 color:#cdcf99;
