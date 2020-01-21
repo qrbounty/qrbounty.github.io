@@ -6,8 +6,9 @@ permalink: /
 
 # Welcome!
 
-Sorry, I'm still working on this site. Here's a challenge:
+While I'm still working on this site, here's a challenge:
 
+<p align="center">
 {% highlight irc %}
 0c bc 1b 37 b2 23 e0 6a 13 34 fe e5 ae 59 11 06
 03 33 73 dd 2f f2 43 e6 56 01 e4 c0 13 9e fb 1f
@@ -24,3 +25,6 @@ d0 16 e6 d6 10 79 82 f8 16 76 dd bd 6e 3b 7e 89
 02 26 02 26 02 26 02 26 02 26 02 26 02 26 02 26
 02 e6 6c 40 12 fa 47 b3 b2 37 3b 37 13
 {% endhighlight %}
+<p>
+  
+You may also want to check out the [/about](/about) page!
