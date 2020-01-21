@@ -28,3 +28,12 @@ d0 16 e6 d6 10 79 82 f8 16 76 dd bd 6e 3b 7e 89
 </div>
 
 You may also want to check out the /about page!
+
+<!-- 
+int getRandomNumber()
+{
+    return 4; // chosen by fair dice roll.
+              // guaranteed to be random.
+}
+via https://xkcd.com/221/
+--!>
