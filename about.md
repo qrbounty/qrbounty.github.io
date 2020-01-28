@@ -9,7 +9,8 @@ Hey there! I'm a lifelong security ethusiast who generally keeps a low profile. 
 Because of my long hobbyist history I often find myself running into topics I haven't actively used in years, luckily that same history has given me the super power of being able to pick almost anything back up at full speed after a brief refresher.
 
 # Some mostly-non-office highlights from my security and tech history:  
-* 2019 / OSINT, Terraform, LoRa radio, ESP8266
+* 2020 / So far: New Dotfiles/Bootstrapper, binary visualization
+* 2019 / OSINT (3rd place @ Defcon TraceLabs CTF), Terraform, LoRa radio, ESP8266
 * 2018 / SciPy, Pandas, a little machine learning
 * 2017 / Router reverse engineering, 3D printing
 * 2016 / HackyEaster CTF winners circle, first DEFCON
