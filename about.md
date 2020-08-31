@@ -8,6 +8,21 @@ permalink: /about
 Hey there! I'm a lifelong security ethusiast who generally keeps a low profile. When it comes to tactics I value being a scalpel over being a hammer. I'm also a "sharpen the axe" kind of person so I'm usually in no hurry to drop right into a shell.  
 Because of my long hobbyist history I often find myself running into topics I haven't actively used in years, luckily that same history has given me the super power of being able to pick almost anything back up at full speed after a brief refresher.
 
+# Some Favorites
+## Movies:
+* Hackers 
+* WarGames
+* Office Space
+
+## Songs (for 2019/2020):
+* ["Randomize"](https://www.youtube.com/watch?v=WwhGv45hgXE) by Flymeon
+* ["Lucie, Too"](https://www.youtube.com/watch?v=FSWaQENqvQk) by Now, Now
+* ["Empire"](https://www.youtube.com/watch?v=5_9BOFtwvZc) by Kids of the Apocalypse
+
+## Games (just 2020):
+* Tetris
+* CrossCode
+
 # Some mostly-non-office highlights from my security and tech history:  
 * 2020 / So far: New Dotfiles/Bootstrapper, binary visualization
 * 2019 / OSINT (3rd place @ Defcon TraceLabs CTF), Terraform, LoRa radio, ESP8266
