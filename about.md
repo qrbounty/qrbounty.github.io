@@ -18,6 +18,7 @@ Because of my long hobbyist history I often find myself running into topics I ha
 * ["Randomize"](https://www.youtube.com/watch?v=WwhGv45hgXE) by Flymeon
 * ["Prehistoric"](https://www.youtube.com/watch?v=9QUPwMdqxjw) by Now, Now
 * ["Empire"](https://www.youtube.com/watch?v=5_9BOFtwvZc) by Kids of the Apocalypse
+* ["Night Terror"](https://www.youtube.com/watch?v=L8UIHasWRIg) by YTCracker
 
 ## Games (just 2020):
 * Tetris
