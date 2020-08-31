@@ -16,7 +16,7 @@ Because of my long hobbyist history I often find myself running into topics I ha
 
 ## Songs (for 2019/2020):
 * ["Randomize"](https://www.youtube.com/watch?v=WwhGv45hgXE) by Flymeon
-* ["Lucie, Too"](https://www.youtube.com/watch?v=FSWaQENqvQk) by Now, Now
+* ["Prehistoric"](https://www.youtube.com/watch?v=9QUPwMdqxjw) by Now, Now
 * ["Empire"](https://www.youtube.com/watch?v=5_9BOFtwvZc) by Kids of the Apocalypse
 
 ## Games (just 2020):
