@@ -20,9 +20,12 @@ Because of my long hobbyist history I often find myself running into topics I ha
 * ["Empire"](https://www.youtube.com/watch?v=5_9BOFtwvZc) by Kids of the Apocalypse
 * ["Night Terror"](https://www.youtube.com/watch?v=L8UIHasWRIg) by YTCracker
 
-## Games (just 2020):
+## Games (for 2019/2020):
 * Tetris
 * CrossCode
+* TIS-100
+* Shenzhen I/O
+* Exapunks
 
 # Some mostly-non-office highlights from my security and tech history:  
 * 2020 / New Dotfiles/Bootstrapper, binary visualization, firmware data extractor, 3d printed QFP connectors, resin printer (soon)
