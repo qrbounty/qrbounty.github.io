@@ -24,7 +24,7 @@ Because of my long hobbyist history I often find myself running into topics I ha
 * CrossCode
 
 # Some mostly-non-office highlights from my security and tech history:  
-* 2020 / So far: New Dotfiles/Bootstrapper, binary visualization
+* 2020 / New Dotfiles/Bootstrapper, binary visualization, firmware data extractor, resin printer (soon)
 * 2019 / OSINT (3rd place @ Defcon TraceLabs CTF), Terraform, LoRa radio, ESP8266
 * 2018 / SciPy, Pandas, a little machine learning
 * 2017 / Router reverse engineering, 3D printing
