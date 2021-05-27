@@ -30,8 +30,7 @@ Because of my long hobbyist history I often find myself running into topics I ha
 * 2003 / Diablo trainers and Flash game hacks
 * Before / Many years of running the dial-up bill past $100/mo and breaking/fixing the family computer
 
-# Some Favorites
-Good fodder for a wordlist! 
+# Some Favorites (Good fodder for a wordlist!) 
 ## Movies:
 * Hackers 
 * WarGames
@@ -46,4 +45,4 @@ Good fodder for a wordlist!
 
 # Contact
 You can reach me on [Twitter](https://www.twitter.com) for quick questions  
-My [Github](https://www.github.com/qrbounty) is pretty sparse right now since I host my own at home
+My [Github](https://www.github.com/qrbounty) is pretty sparse right now since I host my own Gitea at home
