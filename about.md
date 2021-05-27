@@ -8,29 +8,11 @@ permalink: /about
 Hey there! I'm a lifelong security ethusiast who generally keeps a low profile. When it comes to tactics I value being a scalpel over being a hammer. I'm also a "sharpen the axe" kind of person so I'm usually in no hurry to drop right into a shell.  
 Because of my long hobbyist history I often find myself running into topics I haven't actively used in years, luckily that same history has given me the super power of being able to pick almost anything back up at full speed after a brief refresher.
 
-# Some Favorites
-## Movies:
-* Hackers 
-* WarGames
-* Office Space
-
-## Songs (for 2019/2020):
-* ["Randomize"](https://www.youtube.com/watch?v=WwhGv45hgXE) by Flymeon
-* ["Prehistoric"](https://www.youtube.com/watch?v=9QUPwMdqxjw) by Now, Now
-* ["Empire"](https://www.youtube.com/watch?v=5_9BOFtwvZc) by Kids of the Apocalypse
-* ["Night Terror"](https://www.youtube.com/watch?v=L8UIHasWRIg) by YTCracker
-
-## Games (for 2019/2020):
-* Tetris
-* CrossCode
-* TIS-100
-* Shenzhen I/O
-* Exapunks
-
 # Some mostly-non-office highlights from my security and tech history:  
-* 2020 / New Dotfiles/Bootstrapper, binary visualization, firmware data extractor, 3d printed QFP connectors, resin printer (soon)
+* 2021 / Back on CTFs (HackTheBox mostly), IoT
+* 2020 / New Dotfiles/Bootstrapper, binary visualization, firmware data extractor, 3d printed QFP connectors
 * 2019 / OSINT (3rd place @ Defcon TraceLabs CTF), Terraform, LoRa radio, ESP8266
-* 2018 / SciPy, Pandas, a little machine learning
+* 2018 / Stock trading bot, SciPy, Pandas, a little machine learning
 * 2017 / Router reverse engineering, 3D printing
 * 2016 / HackyEaster CTF winners circle, first DEFCON
 * 2015 / BiBiFi participant, led first pentest 
@@ -47,6 +29,20 @@ Because of my long hobbyist history I often find myself running into topics I ha
 * 2004 / Built first computer from scraps, fried a CPU
 * 2003 / Diablo trainers and Flash game hacks
 * Before / Many years of running the dial-up bill past $100/mo and breaking/fixing the family computer
+
+# Some Favorites
+Good fodder for a wordlist! 
+## Movies:
+* Hackers 
+* WarGames
+* Office Space
+
+## Games:
+* Tetris
+* CrossCode
+* TIS-100
+* Shenzhen I/O
+* Exapunks
 
 # Contact
 You can reach me on [Twitter](https://www.twitter.com) for quick questions  
