@@ -6,7 +6,7 @@ permalink: /
 
 # Welcome!
 
-While I'm still working on this site, here's a challenge:
+Here's a challenge:
 
 <div id="wrapper" style="text-align:center">
  <div id="container" style="display:inline-block;text-align:left">
