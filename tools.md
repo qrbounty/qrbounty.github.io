@@ -18,6 +18,7 @@ The following is a list of just a few tools or ideas I've developed or am workin
 - Cloud-based website screenshotter (Python 3, AWS, Terraform)
 - Log analysis tool with YAML-based custom ruleset (Python 3)
 - URL defanging API (Python 3)
+- encoder/decoder using unicode diacriticals or emoji to hide C2 data on social media. 
 
 ## Idea stage
 - Mesh network using genetic algorithms to find more succesful configurations
